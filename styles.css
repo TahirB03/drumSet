@@ -80,5 +80,13 @@ background-image: url("images/tom1.png");
   background-color: white;
 }
 .drum:active{
-  transform: translateY(2px);
+  animation: pressed .2s alternate;
+}
+.pressed{
+  animation: pressed .2s alternate;
+}
+@keyframes pressed{
+  100%{
+    transform: translateY(2px);
+  }
 }
